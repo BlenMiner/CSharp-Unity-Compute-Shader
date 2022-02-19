@@ -1,0 +1,14 @@
+#pragma kernel CSMain
+
+RWStructuredBuffer<uint> strutureBuffer;
+
+[numthreads(64, 1, 1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    if (id.x < strutureBuffer.Length)
+    {
+        strutureBuffer[id.x] = id.x * 2;
+    }
+
+}
+
