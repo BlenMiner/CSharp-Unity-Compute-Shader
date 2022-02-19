@@ -1,6 +1,13 @@
 # CSharp-Unity-Compute-Shader (Unity 2020.3.26f1)
 Create compute shaders for Unity with C#.
 
+This is extremely incomplete, started it this weekend (2/19/2022).
+
+Why?
+
+- Learning
+- Easier debugging (simulate shader on CPU)
+
 Shader example:
 
 ```c#
